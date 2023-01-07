@@ -133,6 +133,11 @@
   letter-spacing: 5px;
   line-height: 1.5;
 }
+@media screen and (max-width: 1400px) {
+  .fv__subtitle {
+    right: 0;
+  }
+}
 .fv__btn {
   width: 20%;
   margin: 50px 0 0 auto;
