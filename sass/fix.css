@@ -2,16 +2,49 @@
   background-image: linear-gradient(90deg, rgb(161, 140, 209), rgb(251, 194, 235));
 }
 
+.font--text-shadow {
+  text-shadow: 2px 2px 4px #000;
+  -webkit-text-stroke: 2px #fff;
+  text-stroke: 2px #fff;
+}
+
+.fv__font--large {
+  font-size: clamp(40px, 6.5vw, 50px);
+  -webkit-text-stroke: 2px #fff;
+}
+
+.fv__font--middle {
+  font-size: clamp(30px, 6.5vw, 40px);
+  -webkit-text-stroke: 2px #fff;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 99;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 75px;
-  padding: 0 7%;
+  padding: 0 9%;
+  transition: 0.5s;
+}
+@media screen and (min-width: 1480px) {
+  .header {
+    padding: 0 13%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .header {
+    padding: 0 9%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .header {
+    padding: 0 5%;
+  }
 }
 .header__logo img {
   width: 150px;
@@ -35,4 +68,63 @@
 .header__item:last-child a {
   display: block;
   padding: 13px 30px;
+}
+
+.fv {
+  position: relative;
+  margin-top: 75px;
+  height: 100vh;
+  background-image: url(../img/KV@2x.png);
+  background-size: cover;
+}
+.fv__wrapper {
+  margin: 0 9%;
+  padding-top: 80px;
+  transition: 0.5s;
+}
+@media screen and (min-width: 1480px) {
+  .fv__wrapper {
+    margin: 0 13%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .fv__wrapper {
+    margin: 0 9%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .fv__wrapper {
+    margin: 0 5%;
+  }
+}
+.fv__title {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+.fv__maintitle {
+  width: 65%;
+  font-size: clamp(50px, 7.5vw, 90px);
+  letter-spacing: 15px;
+  line-height: 1.7;
+  color: #fff;
+}
+.fv__subtitle {
+  position: absolute;
+  right: 70px;
+  margin-bottom: 30px;
+  font-size: 33px;
+  font-weight: 100;
+  -webkit-text-stroke: unset;
+  color: #fff;
+  letter-spacing: 5px;
+  line-height: 1.5;
+}
+.fv__btn {
+  width: 20%;
+  margin: 50px 0 0 auto;
+}
+.fv__btn img {
+  width: 100%;
 }/*# sourceMappingURL=fix.css.map */
