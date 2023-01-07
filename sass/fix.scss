@@ -102,6 +102,13 @@
   background-image: url(../img/KV@2x.png);
   background-size: cover;
 
+  @media screen and (min-width: 1480px) {
+    height: 110vh;
+  }
+  @media screen and (max-width: 1400px) {
+    height: 100vh;
+  }
+
   &__wrapper {
     margin: 0 9%;
     padding-top: 80px;

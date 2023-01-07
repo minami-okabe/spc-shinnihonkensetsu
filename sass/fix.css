@@ -89,6 +89,16 @@
   background-image: url(../img/KV@2x.png);
   background-size: cover;
 }
+@media screen and (min-width: 1480px) {
+  .fv {
+    height: 110vh;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .fv {
+    height: 100vh;
+  }
+}
 .fv__wrapper {
   margin: 0 9%;
   padding-top: 80px;
