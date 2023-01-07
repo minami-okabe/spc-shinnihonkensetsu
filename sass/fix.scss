@@ -245,3 +245,71 @@
     }
 
 }
+
+.vr-live{
+    &__video{
+        max-width: 800px;
+        margin: 100px auto 30px auto;
+    }
+
+    &__youtube{
+        margin: 30px 0 100px 0;
+        iframe{
+            width: 100%;
+        }
+    }
+
+    &__list{
+        margin: 0 20px;
+        padding: 20px 35px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.6);
+        background: #fff;
+    }
+
+    &__item{
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    &__box{
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto 100px auto;
+
+        display: flex;
+        gap: 20px;
+    }
+
+    &__card{
+        width: 33.3333%;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.6);
+        background: #fff;
+
+        img{
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.6);
+        }
+
+        h4{
+            margin: 15px 0;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        p{
+            margin: 0 5%;
+        }
+    }
+
+    &__amoeba{
+        position: absolute;
+        right: -100px;
+        bottom: -50px;
+        width: 800px;
+        z-index: -1;
+    }
+}
