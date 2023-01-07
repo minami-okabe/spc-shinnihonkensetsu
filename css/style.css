@@ -18,7 +18,6 @@
 }
 
 .card-radius_02 {
-  overflow: hidden;
   border-radius: 30px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -56,6 +55,7 @@
 
 .card__body_02 {
   padding: 0 1.5rem;
+  background: #fff;
 }
 
 .card__text_02 {
@@ -67,15 +67,8 @@
 .card__text2_02 {
   font-size: 14px;
   margin-top: 0;
-  margin-bottom: 1.5rem;
   -moz-text-align-last: left;
        text-align-last: left;
-}
-
-.btn--orange,
-a.btn--orange {
-  color: #fff;
-  background-image: linear-gradient(90deg, rgb(161, 140, 209), rgb(251, 194, 235));
 }
 
 .btn--orange:hover,
@@ -105,18 +98,19 @@ a.btn--radius {
   font-weight: 500;
   text-decoration: none;
   margin-bottom: 10px;
-  box-shadow: 0px 0px 4px -1px gray;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 .button003 a:after {
   content: "";
-  width: 5px;
-  height: 5px;
-  border-top: 3px solid #fff;
-  border-right: 3px solid #fff;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
   transform: rotate(45deg) translateY(-50%);
   position: absolute;
   top: 50%;
+  margin-right: 10px;
   right: 20px;
   border-radius: 1px;
   transition: 0.3s ease-in-out;
@@ -145,18 +139,20 @@ a.btn--radius {
   margin: 0 auto;
   background: linear-gradient(to right, #A18CD1 0%, #FBC2EB 100%);
   width: 700px;
-  padding: 3px; /*borderの太さ*/
+  padding: 1px; /*borderの太さ*/
   border-radius: 50px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 .button004 a:after {
   content: "";
-  width: 5px;
-  height: 5px;
-  border-top: 3px solid #313131;
-  border-right: 3px solid #313131;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #313131;
+  border-right: 2px solid #313131;
   transform: rotate(45deg) translateY(-50%);
   position: absolute;
+  margin-right: 10px;
   top: 50%;
   right: 20px;
   border-radius: 1px;
@@ -208,26 +204,28 @@ header .header-top .header-left a img {
   font-size: 100px;
   margin-left: 10%;
   margin-top: 13%;
-  text-shadow: 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000;
-  -webkit-text-stroke: 2px #FFF;
+  line-height: 2;
+  text-shadow: 1px 1px 10px #7C7C7C, -1px -1px 10px #7C7C7C;
 }
 .top .top-subtitle {
   top: 0;
   position: absolute;
   letter-spacing: 10px;
   color: #fff;
-  font-size: 30px;
+  font-size: 35px;
   margin-left: 45%;
-  margin-top: 25%;
+  margin-top: 30%;
+  text-shadow: -1px 1px 10px #7C7C7C, -1px -1px 10px #7C7C7C;
 }
 .top .top-subtitle .top-subtitle-span {
-  font-size: 50px;
+  font-size: 65px;
 }
 .top .top-btn {
   position: absolute;
   top: 0;
-  margin-top: 40%;
-  margin-left: 70%;
+  margin-top: 48%;
+  right: 0;
+  margin-right: 10%;
 }
 .top .top-btn img {
   width: 250px;
@@ -239,11 +237,14 @@ header .header-top .header-left a img {
   background: -webkit-linear-gradient(90deg, rgb(161, 140, 209), rgb(251, 194, 235));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  font-size: 22px;
 }
 
 .main-subtitle {
   font-size: 28px;
   margin-top: -10px;
+  margin-bottom: 30px;
 }
 
 .main-text {
@@ -265,21 +266,48 @@ header .header-top .header-left a img {
   background: #fff; /*背景を白*/
   padding: 20px;
   border-radius: 50px;
+  background: linear-gradient(90deg, rgb(161, 140, 209), rgb(251, 194, 235));
+  border-radius: 50px;
+  padding: 1px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  text-decoration: none;
+  width: 350px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
 }
 .model-btn a {
   padding: 20px;
   border-radius: 50px;
   color: #000;
+  text-decoration: none;
+}
+
+.model-btn a:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(45deg) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  border-radius: 1px;
+  transition: 0.3s ease-in-out;
 }
 
 .btn {
   text-align: center;
   margin: 0 auto;
-  background: linear-gradient(to right, #A18CD1 0%, #FBC2EB 100%);
   width: 350px;
   padding: 3px; /*borderの太さ*/
   border-radius: 50px;
-  height: 50px;
+  height: 20px;
+  background: #fff;
 }
 
 .about {
@@ -298,12 +326,12 @@ header .header-top .header-left a img {
   margin-top: -10px;
 }
 .about .main-text {
-  font-size: 14px;
   width: 50%;
   text-align: left;
   margin: 0 auto;
   margin-top: 30px;
   line-height: 2;
+  font-size: 16px;
 }
 
 /*--------------------------------------
@@ -312,6 +340,9 @@ header .header-top .header-left a img {
 .l-wrapper_01 {
   margin: 1rem auto;
   width: 400px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 30px;
 }
 
 .card-radius_01 {
@@ -351,14 +382,8 @@ header .header-top .header-left a img {
   padding: 0 1.5rem;
 }
 
-.card__text_01 {
-  font-size: 14px;
-  text-align: center;
-  text-decoration: none;
-}
-
 .card__text2_01 {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 0;
   margin-bottom: 1.5rem;
 }
@@ -418,15 +443,16 @@ header .header-top .header-left a img {
   line-height: 1.8;
   width: 40%;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .photo-zone {
   width: 100%;
-  left: 0;
-  right: 0;
+  justify-content: space-between;
 }
 .photo-zone ul {
   display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 .photo-zone ul li {
@@ -493,6 +519,7 @@ header .header-top .header-left a img {
 }
 .box-item img {
   width: 400px;
+  margin-bottom: 30px;
 }
 
 .house-about {
@@ -579,11 +606,35 @@ header .header-top .header-left a img {
 }
 
 .contact-btn {
-  background: linear-gradient(to right, #A18CD1 0%, #FBC2EB 100%);
-  width: 700px;
-  height: 50px;
+  background: linear-gradient(90deg, rgb(161, 140, 209), rgb(251, 194, 235));
   border-radius: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 350px;
+  height: 50px;
+  padding: 10px 25px;
   color: #fff;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+.contact-btn a:after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  border-radius: 1px;
+  transition: 0.3s ease-in-out;
 }
 
 .footer-btn {
