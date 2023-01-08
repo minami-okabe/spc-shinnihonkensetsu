@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .color--gradation {
   background-image: linear-gradient(90deg, rgb(161, 140, 209), rgb(251, 194, 235));
 }
@@ -81,13 +85,13 @@
 .fv {
   position: relative;
   margin-top: 75px;
-  height: 100vh;
+  height: 110vh;
   background-image: url(../img/KV@2x.png);
   background-size: cover;
 }
 @media screen and (min-width: 1480px) {
   .fv {
-    height: 110vh;
+    height: 120vh;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -174,7 +178,7 @@
 
 .about {
   max-width: 800px;
-  margin: 100px auto;
+  margin: 50px auto 100px auto;
 }
 .about__text {
   margin: 30px 0;

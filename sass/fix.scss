@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body{
+    overflow-x: hidden;
+}
 
 .color--gradation {
   background-image: linear-gradient(
@@ -99,13 +102,13 @@
 .fv {
   position: relative;
   margin-top: 75px;
-  height: 100vh;
+  height: 110vh;
 
   background-image: url(../img/KV@2x.png);
   background-size: cover;
 
   @media screen and (min-width: 1480px) {
-    height: 110vh;
+    height: 120vh;
   }
   @media screen and (max-width: 1400px) {
     height: 100vh;
@@ -189,7 +192,7 @@
 
 .about{
     max-width: 800px;
-    margin: 100px auto;
+    margin: 50px auto 100px auto;
 
     &__text{
         margin: 30px 0;
