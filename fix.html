@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="sass/fix.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <title>新日本建設バーチャル見学会</title>
 </head>
 <body>
@@ -101,5 +102,78 @@
         </ul>
     </section>
 
+    <section class="detail">
+        <img src="img/bg-3.png" alt="" class="detail__amoeba">
+        <div class="common__title">
+            <span class="common__subtitle">detail</span>
+            <h3 class="common__maintitle">気になる場所をピックアップ</h3>
+        </div>
+        <!-- スライダーのコンテナ -->
+        <div class="swiper">
+            <!-- 必要に応じたwrapper -->
+            <ul class="swiper-wrapper">
+                <!-- スライド -->
+                <li class="swiper-slide">
+                    <div class="detail__thumbnail">
+                        <img src="img/cm3.png" alt="サムネイル画像">
+                    </div>
+                    <div class="detail__desc">
+                        <div class="detail__title">
+                            <h4>玄関</h4>
+                            <p>⼤迫⼒の⼤きな丸太柱と丸太梁</p>
+                        </div>
+                        <p>⽞関を⼊ると、新⽇本建設の象徴ともいえる全⻑6ｍもある⼤きな丸太柱が迎えてくれます。<br>
+                            天井を⾒上げると、⼤迫⼒の丸太梁もお出迎え。
+                        </p>
+                        <div class="detail__btn"><a href="#">詳しく見る</a></div>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="detail__thumbnail">
+                        <img src="img/cm3.png" alt="サムネイル画像">
+                    </div>
+                    <div class="detail__desc">
+                        <div class="detail__title">
+                            <h4>玄関</h4>
+                            <p>⼤迫⼒の⼤きな丸太柱と丸太梁</p>
+                        </div>
+                        <p>⽞関を⼊ると、新⽇本建設の象徴ともいえる全⻑6ｍもある⼤きな丸太柱が迎えてくれます。<br>
+                            天井を⾒上げると、⼤迫⼒の丸太梁もお出迎え。
+                        </p>
+                        <div class="detail__btn"><a href="#">詳しく見る</a></div>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="detail__thumbnail">
+                        <img src="img/cm3.png" alt="サムネイル画像">
+                    </div>
+                    <div class="detail__desc">
+                        <div class="detail__title">
+                            <h4>玄関</h4>
+                            <p>⼤迫⼒の⼤きな丸太柱と丸太梁</p>
+                        </div>
+                        <p>⽞関を⼊ると、新⽇本建設の象徴ともいえる全⻑6ｍもある⼤きな丸太柱が迎えてくれます。<br>
+                            天井を⾒上げると、⼤迫⼒の丸太梁もお出迎え。
+                        </p>
+                        <div class="detail__btn"><a href="#">詳しく見る</a></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <!-- ここに画像を入れる -->
+        <ul class="detail__list">
+            <li class="detail__item"><img src="" alt=""></li>
+            <li class="detail__item"><img src="" alt=""></li>
+            <li class="detail__item"><img src="" alt=""></li>
+            <li class="detail__item"><img src="" alt=""></li>
+            <li class="detail__item"><img src="" alt=""></li>
+        </ul>
+
+    </section>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
 </body>
 </html>
