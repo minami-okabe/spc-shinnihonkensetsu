@@ -26,7 +26,7 @@
   z-index: 999;
   width: 100%;
   height: 100vh; /*表示する高さ*/
-  overflow: auto;
+  overflow: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -35,15 +35,14 @@
   /*ナビゲーション天地中央揃え*/
   position: absolute;
   z-index: 999;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 10%;
 }
 
 /*リストのレイアウト設定*/
 #g-nav li {
   list-style: none;
-  text-align: center;
+  text-align: left;
 }
 
 #g-nav li a {
@@ -58,7 +57,7 @@
 
 /*========= ボタンのためのCSS ===============*/
 .openbtn1 {
-  position: fixed;
+  position: absolute;
   z-index: 9999; /*ボタンを最前面に*/
   top: 10px;
   right: 10px;
@@ -69,7 +68,7 @@
 
 /*×に変化*/
 .openbtn1 span {
-  display: inline-block;
+  display: block;
   transition: all 0.4s;
   position: absolute;
   left: 14px;
@@ -268,6 +267,10 @@ a.btn--radius {
   right: 20px;
   border-radius: 1px;
   transition: 0.3s ease-in-out;
+}
+
+.openbtn1 {
+  display: none;
 }
 
 header {
@@ -993,7 +996,7 @@ footer ul li {
 
 @media screen and (max-width: 767px) {
   .pc {
-    display: none;
+    display: none !important;
   }
   .sp {
     display: block !important;
@@ -1009,11 +1012,18 @@ footer ul li {
   .top .top-subtitle {
     font-size: 20px;
   }
-  header {
+  .openbtn1 {
+    display: inline-block;
+    position: absolute;
+  }
+  .header-right {
     display: none;
   }
-  .about__list {
+  .header-top {
     display: block;
+  }
+  .about__list {
+    display: block !important;
   }
   .about__item {
     width: 80%;
