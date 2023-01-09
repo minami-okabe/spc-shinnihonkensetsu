@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>新日本建設バーチャル見学会</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 <body>
     <!-- ここからヘッダーです -->
+    <a name="header"></a>
     <header>
         <div class="header-top">
             <div class="header-left">
@@ -16,122 +18,104 @@
             </div><!-- /header-left -->
             <div class="header-right">
                 <ul>
-                    <a href=""><li>バーチャル見学会とは</li></a>
-                    <a href=""><li>VR動画</li></a>
-                    <a href=""><li>モデルハウス「楼」</li></a>
+                    <a href="#about"><li>バーチャル見学会とは</li></a>
+                    <a href="#vrlive"><li>VR動画</li></a>
+                    <a href="#modelhouse"><li>モデルハウス「楼」</li></a>
                     <a href=""><li>ピックアップ見学</li></a>
                     <a href="" class="button002">見学予約をする</a>
                 </ul>
             </div><!-- /header-right -->
         </div><!-- /header-top -->
+        <div class="openbtn1"><span></span><span></span><span></span></div>
+            <nav id="g-nav">
+            <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+            <ul>
+                <li><a href="#">バーチャル見学会とは</a></li>  
+                <li><a href="#">VR動画</a></li>  
+                <li><a href="#">モデルハウス「楼」</a></li>  
+                <li><a href="#">ピックアップ見学</a></li>  
+                <a href="" class="button002">見学予約をする</a>
+            </ul>
+            </div>
+            </nav>
     </header>
 
         <!-- ここからKVです -->
         <div class="top">
-            <img src="/img/KV@2x.png" alt="トップビュー画像">
+            <img class="pc" src="/img/KV@2x.png" alt="パソコン用のトップ画像">
+            <img class="sp" src="/img/top_sp@3x.png" alt="スマートフォン用のトップ画像">
             <h1 class="top-title">どこからでも<br>いつでも<br>誰とでも</h1>
             <h2 class="top-subtitle">来場不要！<br><span class="top-subtitle-span">VR動画</span>で隅々まで見学<br>新日本建設の<span class="top-subtitle-span">バーチャル見学会</span></h2><!-- /top-subtitle -->
             <div class="top-btn"><img src="/img/btn.png" alt="押せるボタン画像"></div><!-- /top-btn -->
         </div><!-- /top -->
-
         <!-- ここからaboutです -->
-        <div class="about">
-            <h3 class="main-title">about</h3>
-            <div class="main-subtitle">バーチャル見学会とは？</div><!-- /main-subtitle -->
-            <div class="main-text">新日本建設では、これまで来店していただかないとご覧いただけなかったモデルハウスの見学を、
-                お客様が来場せずともVR動画などでモデルハウスを見学できる「バーチャル見学会」をwebでリリースいたしました。
-                新型コロナウイルスのご心配もなく、web上で「どこからでも」「いつでも」「誰とでも」ご覧いただけるバーチャル見学会をお楽しみください。
-            </div><!-- /main-text -->
-            <div class="card1">
-            <div class="l-wrapper_01 card-radius_01">
-            <article class="card_01">
-            <div class="card__header_01">
-                <figure class="card__thumbnail_01">
-                    <img src="/img/icon1.png" alt="サムネイル" class="card__image_01">
-                </figure>
-                <p class="card__title_01">いつでも誰とでも閲覧が可能</p>
-            </div>
-            <div class="card__body_01">
-                <p class="card__text2_01">　新型コロナウイルスのご心配もなく、インターネットが繋がる場所であれば、パソコン、スマートフォン、タブレットからご気軽にご見学いただけます。</p>
-            </div>    
-            </article>
+        <a name="about"></a>
+    <section class="about">
+        <div class="common__title">
+            <span class="common__subtitle">about</span>
+            <h3 class="common__maintitle">バーチャル展示会とは？</h3>
         </div>
-            <div class="l-wrapper_01 card-radius_01">
-            <article class="card_01">
-            <div class="card__header_01">
-                <figure class="card__thumbnail_01">
-                    <img src="/img/icon2.png" alt="サムネイル" class="card__image_01">
-                </figure>
-                <p class="card__title_01">実際にそこにいるような臨場感</p>
-            </div>
-            <div class="card__body_01">
-                <p class="card__text2_01">　バーチャル見学会では、360度自由に見渡すことができるVR動画を見ることができます。普通の動画では味わえない臨場感で、実際にモデルハウスに行ったかのような感覚が味わえます。</p>
-            </div>    
-            </article>
+        <div class="about__text">
+            <p>　新日本建設では、これまで来店していただかないとご覧いただけなかったモデルハウスの見学を、お客様が来場せずともVR動画などでモデルハウスを見学できる「バーチャル見学会」をwebでリリースいたしました。新型コロナウイルスのご心配もなく、web上で「どこからでも」「いつでも」「誰とでも」ご覧いただけるバーチャル見学会をお楽しみください。</p>
         </div>
-        </div><!-- /card1 -->
-        <img src="/img/bg-1.png" alt="ピンクの背景画像" class="img2">
-        </div><!-- /about -->
-
-        <!-- ここからVR動画のゾーンです -->
-        <div class="vr-movie">
-            <h3 class="main-title">VR live</h3>
-            <div class="main-subtitle">VR動画でモデルハウスを見学</div><!-- /main-subtitle -->
-            <iframe width="900" height="500" src="https://www.youtube.com/embed/5GHEiLapEg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="movie-Box">
-                <p>
-                    ・VR動画は、端末や画面を操作することによって360度の映像をご覧いただけます。<br>
-                    ・VR動画内にお部屋の説明が正面に表示されます。ゆっくりご覧いただく場合は動画をストップしてご覧ください。<br>
-                    ・【スマートフォン/タブレット】スマートフォン/タブレットで閲覧の方は、スマートフォン/タブレットを上下左右に動かしてご覧ください。<br>
-                    ・【PC】PCで閲覧の方は、動画をクリックして画面を動かしてご覧ください。
-                </p>
-            </div><!-- /movie-Boxtext -->
-        </div><!-- /vr-movie -->
-        <!-- ここから3カード部分です -->
-        <div class="card2-Box">
-        <div class="l-wrapper_02 card-radius_02">
-            <article class="card_02">
-            <div class="card__header_02">
-                <p class="card__title_02">モデルハウスの中から外までVRで見れる</p>
-                <figure class="card__thumbnail_02">
-                    <img src="/img/card1.png" alt="サムネイル" class="card__image_02">
-                </figure>
-            </div>
-            <div class="card__body_02">
-                <p class="card__text2_02">モデルハウスの玄関から洗面コーナー、台所からお庭までを隈なく、VR動画でご覧いただくことができます。</p>
-            </div>    
-            </article>
+        <ul class="about__list">
+            <li class="about__item">
+                <div class="about__img">
+                    <img src="img/icon1.png" alt="">
+                </div>
+                <h4>いつでも、誰とでも閲覧が可能</h4>
+                <p>　新型コロナウイルスのご心配もなく、インターネットが繋がる場所であれば、パソコン、スマートフォン、タブレットからご気軽にご見学いただけます。</p>
+            </li>
+            <li class="about__item">
+                <div class="about__img">
+                    <img src="img/icon2.png" alt="">
+                </div>
+                <h4>実際にそこにいるような臨場感</h4>
+                <p>　バーチャル見学会では、360度自由に見渡すことができるVR動画を見ることができます。普通の動画では味わえない臨場感で、実際にモデルハウスに行ったかのような感覚が味わえます。</p>
+                <img src="img/bg-1.png" alt="アメーバ画像" class="about__amoeba">
+            </li>
+        </ul>
+    </section>
+    <!-- ここから動画のゾーンです -->
+        <a name="vrlive"></a>
+        <section class="vr-live">
+        <div class="common__title">
+            <span class="common__subtitle">VR live</span>
+            <h3 class="common__maintitle">VR動画でモデルハウスを見学</h3>
         </div>
-        <div class="l-wrapper_02 card-radius_02">
-            <article class="card_02">
-            <div class="card__header_02">
-                <p class="card__title_02">字幕で今いる場所を確認</p>
-                <figure class="card__thumbnail_02">
-                    <img src="/img/card2.png" alt="サムネイル" class="card__image_02">
-                </figure>
+        <div class="vr-live__video">
+            <div class="vr-live__youtube">
+                <iframe width="800" height="500" src="https://www.youtube.com/embed/5GHEiLapEg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div class="card__body_02">
-                <p class="card__text2_02">今どこをご覧いただいているかをすべて字幕を表示し、バーチャル見学中のご自身の位置が知れます。</p>
-            </div>    
-            </article>
+            <ul class="vr-live__list">
+                <li class="vr-live__item">・VR動画は、端末や画面を操作することによって360度の映像をご覧いただけます。</li>
+                <li class="vr-live__item">・VR動画内にお部屋の説明が正面に表示されます。ゆっくりご覧いただく場合は動画をストップしてご覧ください。</li>
+                <li class="vr-live__item">・【スマートフォン/タブレット】スマートフォン/タブレットで閲覧の方は、スマートフォン/タブレットを上下左右に動かしてご覧ください。</li>
+                <li class="vr-live__item">・【PC】PCで閲覧の方は、動画をクリックして画面を動かしてご覧ください。</li>
+            </ul>
         </div>
-        <div class="l-wrapper_02 card-radius_02">
-            <article class="card_02">
-            <div class="card__header_02">
-                <p class="card__title_02">各部屋ごとにこだわりポイントを解説</p>
-                <figure class="card__thumbnail_02">
-                    <img src="/img/card3.png" alt="サムネイル" class="card__image_02">
-                </figure>
-            </div>
-            <div class="card__body_02">
-                <p class="card__text2_02">各部屋ごとに新日本建設の家づくりに基づいたこだわりポイントの解説を字幕でご覧いただけます。</p>
-            </div>    
-            </article>
-        </div>
-        </div><!-- /card2 -->
-        <img src="/img/bg-2.png" alt="ピンクの背景画像" class="pink-image">
+        <ul class="vr-live__box">
+            <li class="vr-live__card">
+                <img src="img/card1.png" alt="サムネイル">
+                <h4>モデルハウスの中から外までVRで見れる</h4>
+                <p>モデルハウスの玄関から洗面コーナー、台所からお庭までを隈なく、VR動画でご覧いただくことができます。</p>
+            </li>
+            <li class="vr-live__card">
+                <img src="img/card2.png" alt="サムネイル">
+                <h4>字幕で今いる場所を確認</h4>
+                <p>今どこをご覧いただいているかをすべて字幕を表示し、バーチャル見学中のご自身の位置が知れます。</p>
+            </li>
+            <li class="vr-live__card">
+                <img src="img/card3.png" alt="サムネイル">
+                <h4>各部屋ごとにこだわりポイントを解説</h4>
+                <p>各部屋ごとに新日本建設の家づくりに基づいたこだわりポイントの解説を字幕でご覧いただけます。</p>
+            </li>
+            <img src="img/bg-2.png" alt="" class="vr-live__amoeba">
+        </ul>
+    </section>
 
         <!-- ここからモデルハウス「楼」とはのゾーンです -->
+        <a name="modelhouse"></a>
         <div class="model-house">
             <h3 class="main-title">model house rou</h3>
             <div class="main-subtitle">モデルハウス「楼」とは</div><!-- /main-subtitle -->
@@ -180,7 +164,114 @@
 
         <!-- ここから「気になる場所をピックアップ」のゾーンです -->
         <div class="detail">
+<section class="detail">
+        <img src="img/bg-3.png" alt="" class="detail__amoeba">
+        <div class="common__title">
+            <span class="common__subtitle">detail</span>
+            <h3 class="common__maintitle">気になる場所をピックアップ</h3>
+        </div>
+        <!-- スライダーのコンテナ -->
+        <div class="swiper">
+            <!-- 必要に応じたwrapper -->
+            <ul class="swiper-wrapper">
+                <!-- スライド -->
+                <li class="swiper-slide">
+                    <div class="detail__thumbnail">
+                        <img src="img/gnkn.png" alt="サムネイル画像">
+                    </div>
+                    <div class="detail__desc">
+                        <div class="detail__title">
+                            <h4>玄関</h4>
+                            <p>⼤迫⼒の⼤きな丸太柱と丸太梁</p>
+                        </div>
+                        <p>⽞関を⼊ると、新⽇本建設の象徴ともいえる全⻑6ｍもある⼤きな丸太柱が迎えてくれます。<br>
+                            天井を⾒上げると、⼤迫⼒の丸太梁もお出迎え。
+                        </p>
+                    <div class="model-btn">
+                        <a href="" class="btn btn--orange btn--radius">詳しくみる</a>
+                    </div><!-- /model-btn -->
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="detail__thumbnail">
+                        <img src="img/gnkn.png" alt="サムネイル画像">
+                    </div>
+                    <div class="detail__desc">
+                        <div class="detail__title">
+                            <h4>リビング</h4>
+                            <p>コンパクトでありながら、広く感じられる空間設計</p>
+                        </div>
+                        <p>LDKの広さは15帖とコンパクトな空間ながらも、吹抜けやコーナー窓、⼤きな窓を設置することで空間全体にゆとりが感じられるように設計に仕上げました。
+                        </p>
+                    <div class="model-btn">
+                        <a href="" class="btn btn--orange btn--radius">詳しくみる</a>
+                    </div><!-- /model-btn -->
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="detail__thumbnail">
+                        <img src="img/ktn.png" alt="サムネイル画像">
+                    </div>
+                    <div class="detail__desc">
+                        <div class="detail__title">
+                            <h4>キッチン</h4>
+                            <p>生活感が出にくいキッチン空間</p>
+                        </div>
+                        <p>⽣活感の出やすいゴミ箱はシンク下に設置し、広めの前壁で、調理中の⼿元がリビングダイニングから見にくく設計しました。
+                        また造作の背⾯収納は扉で隠せるので、キッチン周りはいつもスッキリとして“キレイ”をキープできます。
+                        </p>
+                    <div class="model-btn">
+                        <a href="" class="btn btn--orange btn--radius">詳しくみる</a>
+                    </div><!-- /model-btn -->
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="detail__thumbnail">
+                        <img src="img/snmn.png" alt="サムネイル画像">
+                    </div>
+                    <div class="detail__desc">
+                        <div class="detail__title">
+                            <h4>洗面コーナー</h4>
+                            <p>和モダンな雰囲気と清潔感</p>
+                        </div>
+                        <p>焼き物のような⾵合いが感じられるボーダータイルで仕上げ、和モダンな雰囲気の造作洗⾯台です。洗面台から差し込む自然光で明るい雰囲気と清潔感を演出しました。
+                        </p>
+                    <div class="model-btn">
+                        <a href="" class="btn btn--orange btn--radius">詳しくみる</a>
+                    </div><!-- /model-btn -->
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="detail__thumbnail">
+                        <img src="img/gikn.png" alt="サムネイル画像">
+                    </div>
+                    <div class="detail__desc">
+                        <div class="detail__title">
+                            <h4>外観</h4>
+                            <p>⽇本の伝統的な⼊⺟屋屋根にはモダンさを
+                            プラスしてスッキリとしたデザインに</p>
+                        </div>
+                        <p>⽩い塗り壁（そとん壁）と⿊い焼杉の板張りのデザインはコントラストが際立たせ、印象的な佇まいに仕上げました。
+                        </p>
+                    <div class="model-btn">
+                        <a href="" class="btn btn--orange btn--radius">詳しくみる</a>
+                    </div><!-- /model-btn -->
+                    </div>
+                </li>
+            </ul>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <!-- ここに画像を入れる -->
+        <di class="detail__list">
+            <li class="detail__item"><img src="/img/gennkan.png" alt=""><p>玄関</p></li>
+            <li class="detail__item"><img src="/img/ribinngu.png" alt=""><p>リビング</p></li>
+            <li class="detail__item"><img src="/img/kittinn.png" alt=""><p>キッチン</p></li>
+            <li class="detail__item"><img src="/img/sennmenn.png" alt=""><p>洗面コーナー</p></li>
+            <li class="detail__item"><img src="/img/gaikan.png" alt=""><p>外観</p></li>
+        </di>
 
+    </section>
         </div><!-- /detail -->
 
         <!-- ここから過去のモデルハウスをご紹介のゾーンです -->
@@ -223,17 +314,17 @@
         <div class="house-about">
             <!-- <div class="house-about-Box"> -->
             <div class="house-rou1">
-                <img src="/img/photo2.jpg" alt="「楼」の家の中の画像">
+                <img src="/img/グループ 25.png" alt="「楼」の家の中の画像">
                 <h1>「楼」へのこだわり</h1>
                 <p>新日本建設が手掛けるモデルハウス「楼」について詳しく紹介した専用ページをご用意いたしました。</p>
                 <a href="#">モデルハウス「楼」のご紹介</a>
             </div><!-- /house-rou -->
             <div class="house-rou2">
-                <img src="/img/photo2.jpg" alt="「楼」の家の中の画像">
+                <img src="/img/グループ 24.png" alt="「楼」の家の中の画像">
                 <h1>新日本建設の家作り</h1>
                 <p>新日本建設の家づくりをご紹介した専用ページをご用意いたしました。10年後、20年後、さらにその先まで見据えたお家づくりを。</p>
                 <a href="#">新日本建設の家づくり</a>
-            </div><!-- /house-rou -->
+            </div><!-- /house-rou2 -->
             <!-- </div>/house-about-Box -->
         </div><!-- /house-about -->
         <img src="/img/bg-4.png" alt="ピンクの背景画像" class="pink-image4">
@@ -255,19 +346,24 @@
         <a href=""><img src="/img/top-btn.png" alt="トップへ戻るボタン画像" class="footer-btn"></a>
         <!-- ここからフッターです -->
         <footer>
-            <a href="#"><img src="/img/logo.png" alt="新日本建設のロゴ画像"></a>
+            <a href="#header"><img src="/img/logo.png" alt="新日本建設のロゴ画像"></a>
             <div class="footer-list">
             <ul>
                 <li><a href="#">バーチャル見学会とは</a></li>
-                <li>/</li>
+                <li class="sp-none">/</li>
                 <li><a href="#">VR動画</a></li>
-                <li>/</li>
+                <li class="sp-none">/</li>
                 <li><a href="#">モデルハウス「楼」</a></li>
-                <li>/</li>
+                <li class="sp-none">/</li>
                 <li><a href="#">見学予約する</a></li>
             </ul>
             </div><!-- /footer-list -->
         </footer>
         <p class="Copyright">Copyright© 2023 shinnihon kensetsu Co.,Ltd All rights reserved.</p>
+
+
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/swiper.js"></script>
 </body>
 </html>
