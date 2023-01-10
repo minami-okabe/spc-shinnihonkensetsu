@@ -1,3 +1,8 @@
+html,body{
+  overflow-x: hidden;
+  color: #282828;
+  scroll-behavior: smooth;
+}
 /*========= ナビゲーションのためのCSS ===============*/
 
 #g-nav{
@@ -119,6 +124,14 @@
   text-align: center;
   margin: 0 auto;
   padding-top: 30px;
+  // エフェクト
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.card2-Box.on{
+  transform: translateY(0);
+  opacity: 1.0;
 }
 .l-wrapper_02 {
   margin: 1rem auto;
@@ -161,7 +174,34 @@
   padding-top: 20px;
   border-radius: 30px;
 }
-
+.button002 {
+    background: linear-gradient(90deg, rgba(161, 140, 209, 1), rgba(251, 194, 235, 1));
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 250px;
+    height: 50px;
+    // padding: 10px 25px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    text-decoration: none;
+    // margin-bottom: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,.2);
+    font-size: 18px;
+    padding: 0;
+    margin-top: -15px;
+}
+.header-right {
+  .button002 {
+    p {
+      color: #fff;
+    }
+  }
+}
 .card__body_02 {
   padding: 0 1.5rem;
   background: #fff;
@@ -203,7 +243,7 @@ a.btn--radius {
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    width: 650px;
+    width: 600px;
     height: 50px;
     padding: 10px 25px;
     color: #fff;
@@ -214,7 +254,13 @@ a.btn--radius {
     box-shadow: 0 2px 15px rgba(0,0,0,.2);
 }
 .button003 a:hover {
-    
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.button004:hover {
+    opacity: 0.5;
+    transition: all 0.5s;
+    background: #000;
 }
 .button003 a:after {
     content: '';
@@ -264,9 +310,25 @@ a.btn--radius {
     box-shadow: 0 2px 15px rgba(0,0,0,.2);
     margin-bottom: 100px;
 }
-.button004 a:hover {
 
+
+.swiper-slide-thumb-active:hover {
+  opacity: 0.7;
+  transition: all 0.5s;
 }
+.swiper-slide-next:hover{
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+.swiper-slide-visible:hover {
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+.detail__item:hover {
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+
 .button004 a:after {
     content: '';
     width: 10px;
@@ -281,7 +343,7 @@ a.btn--radius {
     border-radius: 1px;
     transition: 0.3s ease-in-out;
 }
-.button004 a:hover:after {
+.button004:hover {
 
 }
 body {
@@ -333,41 +395,47 @@ header {
       }
     }
   }
+.header-right {
+  a:hover {
+    opacity: 0.6;
+    transition: all 0.3s;
+  }
+}
 
 // ここからトップです
 .pc { display: block !important; }
 .sp { display: none !important; }
 .top {
   width: 100%;
-
   img {
     width: 100%;
+    // width: 1280px;
+    // text-align: center;
+    // margin: 0 auto;
   }
   .top-title {
-    top:0;
     position: absolute;
     color: #fff;
     letter-spacing: 20px;
-    font-size: 100px;
-    margin-left: 10%;
-    margin-top: 13%;
+    font-size: 80px;
+    top: 70px;
+    left:70px;
     line-height: 2;
     text-shadow: 1px 1px 10px #7C7C7C, -1px -1px 10px #7C7C7C;
-    
   } 
 
   .top-subtitle {
-    top:0;
     position: absolute;
     letter-spacing: 10px;
     color: #fff;
-    font-size: 35px;
-    margin-left: 45%;
-    margin-top: 30%;
+    font-size: 26px;
+    right: 0;
+    top: 350px;
+    right: 60px;
     text-shadow: -1px 1px 10px #7C7C7C, -1px -1px 10px #7C7C7C;
 
     .top-subtitle-span{
-      font-size: 65px;
+      font-size: 50px;
     }
   }
   .top-btn {
@@ -382,19 +450,41 @@ header {
     }
   }
 }
+.top-btn:hover {
+  opacity: 0.8;
+  transition: all 0.2s;
+}
     .main-title {
       display: inline-block;
-      background: linear-gradient(90deg, rgba(161, 140, 209, 1), rgba(251, 194, 235, 1));
-      background: -webkit-linear-gradient(90deg, rgba(161, 140, 209, 1), rgba(251, 194, 235, 1));
+      background: linear-gradient(180deg, #A18CD1 0%, #A18CD1 72%, #FBC2EB 100%);
+      background: -webkit-linear-gradient(-180deg, #FBC2EB 0%, #A18CD1 72%, #A18CD1 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       letter-spacing: 2px;
       font-size: 22px;
+
+      // エフェクト
+      transition: 0.8s ease-in-out;
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    .main-title.on {
+      transform: translateY(0);
+      opacity: 1.0;
     }
         .main-subtitle {
           font-size: 28px;
           margin-top:-10px;
           margin-bottom: 30px;
+          font-weight: bold;
+          // エフェクト
+          transition: 0.8s ease-in-out;
+          transform: translateY(30px);
+          opacity: 0;
+        }
+        .main-subtitle.on {
+          transform: translateY(0);
+          opacity: 1.0;
         }
         .main-text {
           font-size: 16px;
@@ -435,6 +525,10 @@ header {
     text-decoration: none;
     }
 }
+.model-btn:hover {
+  opacity: 0.5;
+  transition: all .5s;
+} 
 .model-btn a:after {
     content: '';
     width: 10px;
@@ -448,11 +542,59 @@ header {
     border-radius: 1px;
     transition: 0.3s ease-in-out;
 }
+.model-btn2 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    text-decoration: none;
+    background: #fff;/*背景を白*/
+    padding: 20px;
+    border-radius: 50px;
+    background: linear-gradient(90deg,rgba(161, 140, 209, 1), rgba(251, 194, 235, 1));
+	  border-radius: 50px;
+	  padding: 1px;
+	  position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    text-decoration: none;
+    width: 700px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+
+    a {
+    padding: 20px;
+    border-radius: 50px;
+    color: #000;
+    text-decoration: none;
+    height: 25px;
+    }
+}
+.model-btn2:hover {
+  opacity: 0.5;
+  transition: all .5s;
+} 
+.model-btn2 a:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
 .btn {
     text-align: center;
     margin: 0 auto;
     // background:  linear-gradient(to right, #A18CD1 0%, #FBC2EB 100%);
-    width: 350px;
+    width: 650px;
     padding: 3px;/*borderの太さ*/
     border-radius: 50px;
     height: 20px;
@@ -498,7 +640,7 @@ header {
   p {
     letter-spacing: 1.5px;
     line-height: 1.8;
-    width: 40%;
+    width: 60%;
     margin: 0 auto;
     margin-bottom: 30px;
   }
@@ -506,8 +648,13 @@ header {
 
 
 .photo-zone {
+  margin-bottom: 50px;
   width: 100%;
   justify-content: space-between;
+  // エフェクト
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
   ul {
     display: flex;
     justify-content: space-between;
@@ -525,6 +672,10 @@ header {
 
   }
 }
+.photo-zone.on {
+  transform: translateY(0);
+  opacity: 1.0;
+}
 
 .contact {
   text-align: center;
@@ -535,6 +686,18 @@ header {
     margin-bottom: 30px;
     margin-top: 20px;
     line-height: 2;
+    
+
+    // エフェクト
+    transition: 0.8s ease-in-out;
+    transform: translateY(30px);
+    opacity: 0;
+  }
+}
+.contact {
+  p.on {
+    transform: translateY(0);
+    opacity: 1.0;
   }
 }
 .contact-text {
@@ -548,28 +711,51 @@ header {
 .past-projects {
   text-align: center;
   margin: 0 auto;
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
 
   p {
     font-size: 14px;
+    margin-top: -30px;
+    color: #767676;
   }
+}
+.past-projects.on {
+  transform: translateY(0);
+  opacity: 1.0;
 }
 .modelhouse-box {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 90%;
   text-align: center;
   margin: 0 auto;
+  margin-top: 50px;
+
+  // エフェクト
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.modelhouse-box.on {
+  transform: translateY(0);
+  opacity: 1.0;
 }
 
 .box-item {
   width: 400px;
   text-align: center;
   margin: 0 auto;
-  h1 {
+
+  .box-item-title {
     font-size: 20px;
+    font-weight: bold;
+    -moz-text-align-last: left;
     text-align-last: left;
     border-left: 7px solid #FBC2EB;
-    padding:2px 8px; 
+    padding: 2px 8px;
+    border-image: linear-gradient(to bottom, rgb(161, 140, 209), rgb(251, 194, 237)) 2;
   }
   p {
     font-size: 16px;
@@ -577,6 +763,7 @@ header {
     margin-top: 20px;
     margin-bottom: 30px;
     padding-left: 15px;
+    color: #282828;
   }
   img {
     width: 100%;
@@ -584,60 +771,78 @@ header {
   }
 }
 
-.house-about {
-  margin-top: 150px;
-  display: flex;
-  text-align: center;
+/* add */
+.house-about{
+    margin-top: 150px;
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
+  
+.house-box{
+    position: relative;
+    width: 50%;
+    height: 350px;
+}
+
+.house-box img{
   width: 100%;
-  position: relative;
+  height: 100%;
+  object-fit: cover;
 }
-.house-rou1 {
-  text-align: center;
-  margin: 0 auto;
-  width: 50%;
 
-  img {
-    width: 100%;
-    height: 280px;
-  }
-  h1 {
-    margin-top: -230px;
-    color: #fff;
-  }
-  p {
-    width: 60%;
-    color: #fff;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    text-align-last: left;
-  }
-  a {
-    color: #fff;
+.house-rou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+}
+
+.house-rou p{
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  color: #fff;
+}
+
+.house-rou a{
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
+  font-weight: bold;
+}
+.house-rou {
+  a:hover {
+  opacity: 0.6;
+  transition: all 0.5s;
   }
 }
-.house-rou2 {
-  text-align: center;
-  margin: 0 auto;
-  width: 50%;
-    img {
+
+@media screen and (max-width: 767px) {
+  .house-about{
+    display: block;
+  }
+
+  .house-box{
     width: 100%;
-    height: 280px;
-    object-fit: cover;
-    object-position: bottom; //こちらはcenterとかでも良いかも
   }
-    h1 {
-    margin-top: -230px;
-    color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .house-title h1{
+    font-size: 30px;
   }
-  p {
-    width: 60%;
-    color: #fff;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    text-align-last: left;
-  }
-  a {
-    color: #fff;
+  .house-rou a{
+    font-size: 20px;
   }
 }
 .pink-image4 {
@@ -647,14 +852,27 @@ header {
   margin-top: -150px;
   z-index: -10;
 }
-
+.contact-image {
+  img {
+    width: 50%;
+    height: auto;
+    object-fit: cover; 
+  }
+}
+.contact-image {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 50%;
+  height: 100%;
+}
 .last-contact {
   display: flex;
-  margin-top: 200px;
+  margin-top: 150px;
 
   .last-contact-left {
     text-align: center;
     padding: 50px;
+    width: 50%;
   }
   p {
     width: 70%;
@@ -662,7 +880,13 @@ header {
     text-align-last: left;
     margin-top: 20px;
     margin-bottom: 20px;
+    line-height: 1.5;
   }
+}
+
+.model-btn2 {
+  width: 650px;
+  margin-top: 15px;
 }
 .contact-btn {
     background: linear-gradient(90deg, rgba(161, 140, 209, 1), rgba(251, 194, 235, 1));
@@ -672,7 +896,7 @@ header {
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    width: 350px;
+    width: 300px;
     height: 50px;
     padding: 10px 25px;
     color: #fff;
@@ -681,11 +905,15 @@ header {
     text-decoration: none;
     margin-bottom: 10px;
     box-shadow: 0 2px 15px rgba(0,0,0,.2);
-    
-    a:after {
+    font-size: 18px;
+}
+.contact-btn:hover {
+  opacity: 0.8;
+}
+.contact-btn:after {
     content: '';
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     border-top: 3px solid #fff;
     border-right: 3px solid #fff;
     transform: rotate(45deg) translateY(-50%);
@@ -694,7 +922,7 @@ header {
     right: 20px;
     border-radius: 1px;
     transition: 0.3s ease-in-out;
-}
+    margin-right: 7px;
 }
 .footer-btn {
     width: 150px;
@@ -730,38 +958,88 @@ footer {
     }
   }
 }
+.footer-btn:hover {
+  opacity: 0.6;
+  transition: all 0.2s;
+} 
+
 .Copyright {
   text-align: center;
   margin: 0 auto;
   font-size: 12px;
 }
 .footer-list {
+  // background: #000;
+  justify-content: center;
   text-align: center;
   margin: 0 auto;
-  width: 50%;
   margin-top: 30px;
+  width:100%;
   a {
     text-decoration: none;
     color: #000;
+    text-align: center;
+    margin: 0 auto;
   }
 }
+.footer-list {
 
+  ul {
+    padding-left: 0;
+    list-style: none;
+    display: inline-block;
+  }
+
+    li {
+      display: inline;
+    }
+  }
+.footer-list {
+  a:hover {
+    opacity: 0.6;
+    transition: all 0.3s;
+  }
+}
+.contact {
+  p {
+    width: 50%;
+  }
+}
 .common__title {
   text-align: center;
+  margin-bottom: -20px;
 }
 .common__subtitle {
   display: block;
-  font-size: 18px;
+  font-size: 26px;
   font-weight: bold;
-  background: linear-gradient(90deg, rgb(161, 140, 209), rgb(251, 194, 235));
-  background: -webkit-linear-gradient(90deg, rgb(161, 140, 209), rgb(251, 194, 235));
+  display: inline-block;
+  background: linear-gradient(180deg, #A18CD1 0%, #A18CD1 72%, #FBC2EB 100%);
+  background: -webkit-linear-gradient(-180deg, #FBC2EB 0%, #A18CD1 72%, #A18CD1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: 0;
+  // エフェクト
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.common__subtitle.on {
+  transform: translateY(0);
+  opacity: 1.0;
 }
 .common__maintitle {
   font-size: 30px;
-  font-weight: normal;
-  margin-top: 30px;
+  font-weight: bold;
+  margin-top: 5px;
+  // エフェクト
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.common__maintitle.on {
+  transform: translateY(0);
+  opacity: 1.0;
 }
 .fv__font--large {
   font-size: clamp(40px, 6.5vw, 60px);
@@ -785,11 +1063,21 @@ footer {
 }
 
 .about {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 100px auto;
+  // エフェクト
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.about.on {
+  transform: translateY(0);
+  opacity: 1.0;
 }
 .about__text {
   margin: 30px 0;
+  font-size: 16px;
+  line-height: 1.8;
 }
 .about__list {
   position: relative;
@@ -798,7 +1086,8 @@ footer {
   gap: 50px;
 }
 .about__item {
-  width: 50%;
+  width: 70%;
+  height: 320px;
   padding: 15px;
   border: solid 1px;
   -o-border-image: linear-gradient(to right, rgb(161, 140, 209), rgb(251, 194, 235)) 1;
@@ -809,21 +1098,22 @@ footer {
 }
 .about__item h4 {
   text-align: center;
-  font-size: 20px;
-  font-weight: normal;
+  font-size: 22px;
+  font-weight: bold;
 }
 .about__item p {
-  margin-top: 15px;
+  margin-top: 0px;
+  font-size: 16px;
+  line-height: 2;
 }
 .about__item:first-child img {
-  width: 135px;
+  width: 140px;
 }
 .about__img {
   text-align: center;
 }
 .about__img img {
   width: 150px;
-  margin: 20px 0;
 }
 .about__amoeba {
   position: absolute;
@@ -837,15 +1127,21 @@ footer {
         text-align: center;
     }
 }
+.model-house {
+  p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
 
 
 
 .vr-live__video {
   max-width: 800px;
-  margin: 100px auto 30px auto;
+  margin: 60px auto 10px auto;
 }
 .vr-live__youtube {
-  margin: 30px 0 100px 0;
+  margin: 30px 25px 50px 0;
 }
 .vr-live__youtube iframe {
   width: 100%;
@@ -857,6 +1153,10 @@ footer {
   box-shadow: 0px 0px 16px -6px rgba(0, 0, 0, 0.6);
   background: #fff;
   list-style: none;
+  z-index: 9999;                              /* 重なり順指定 */
+  text-align: center;                         /* 文字中央揃え */
+  position:  relative;
+  text-align-last: left;
 }
 .vr-live__item {
   font-size: 13px;
@@ -868,6 +1168,15 @@ footer {
   margin: 0 auto 100px auto;
   display: flex;
   gap: 20px;
+  margin-top: 30px;
+  // エフェクト
+  transition: 0.8s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.vr-live__box.on {
+  transform: translateY(0);
+  opacity: 1.0;
 }
 .vr-live__card {
   width: 33.3333%;
@@ -1009,18 +1318,28 @@ footer {
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 420px) {
   .pc { display: none !important; }
   .sp { display: block !important; }
   .top {
-    height: 550px;
+    position: absolute;
+    height: auto;
+    z-index: -1;
+    top: 0;
     .top-title {
-      font-size: 30px;
-      letter-spacing: 10px;
-      margin-top: 20%;
+      // font-size: 30px;
+      // letter-spacing: 10px;
+      // margin-top: 20%;
+      display: none;
     }
     .top-subtitle {
-      font-size: 20px;
+      display: none;
+    }
+  }
+  .top-btn {
+    img {
+      width: 130px;
+      margin-top: 420px;
     }
   }
   .openbtn1{
@@ -1038,17 +1357,24 @@ footer {
   }
   .about__list {
     display: block !important;
+    width: 90%;
+  }
+  .about {
+    margin-top: 600px;
   }
   .about__item {
     width: 80%;
     margin-top: 20px;
+    text-align: center;
+    height: 430px;
   }
   .main-subtitle {
     font-size: 20px;
   }
   .common__maintitle {
     font-size: 20px;
-    margin: 0;
+    font-weight: medium;
+    padding: 0;
   }
   .ytp-cued-thumbnail-overlay-image {
     width: 200px;
@@ -1058,7 +1384,7 @@ footer {
     height: 250px;
     text-align: center;
     margin: 0;
-    margin-top: -50px;
+    margin-top: 0px;
     margin-bottom: 30px;
   }
   .vr-live__youtube {
@@ -1082,6 +1408,17 @@ footer {
     text-align: center;
     margin-top: 50px;
   }
+  .detail__list {
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+  }
+  .detail__list img{
+  width: 110px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
   .model-house {
     p {
       width: 80%;
@@ -1132,6 +1469,8 @@ footer {
       
     }
   }
+
+
   .past-projects {
     width: 80%;
     text-align: center;
@@ -1154,6 +1493,7 @@ footer {
     text-align: center;
     margin: 0 auto;
     width: 90%;
+    margin-bottom: 30px;
   }
   .house-about {
     display: block;
@@ -1165,12 +1505,12 @@ footer {
 
     img {
       width: 100%;
-      margin-bottom: 120px;
+
     }
 
     h1 {
       font-size: 24px;
-      margin-top: -200px;
+
     }
     
     p {
@@ -1178,8 +1518,7 @@ footer {
       width: 90%;
     }
     a {
-      background: #000;
-      margin-bottom: 120px;
+
     }
   }
   .house-rou2 {
@@ -1203,6 +1542,9 @@ footer {
       
   .last-contact-left {
     padding: 0;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
 
     p {
       width: 90%;
@@ -1221,18 +1563,44 @@ footer {
     width: 80px;
     margin-top: 30px;
   }
-  footer {
-    margin-top: 60px;
+  .footer-list {
     text-align: center;
+    ul {
+      li {
+          width: 100%;
+          text-align: center;
+          margin: 0 auto;
+          padding: 0;
+          justify-content:space-around;
+      }
+    }
+  }
+  .footer-list {
+    width: 90%;
     margin: 0 auto;
 
     li {
-      float: none;
-      margin: 0;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  footer {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+
+    li {
+        width: 70%;
+        display:flex;
+        flex-flow: column;
+        justify-content:space-around;
     }
     .sp-none {
       display: none;
     }
+  }
+  .Copyright {
+    font-size: 10px;
   }
   .swiper-slide {
     display: block;
@@ -1257,4 +1625,56 @@ footer {
     text-align: left;
   }
 }
+}
+.detail__title {
+  h4 {
+    font-weight: bold;
+  }
+  p {
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 767px) {
+   .openbtn1{
+    display: inline-block; // inline-blockでも可
+    position:absolute;
+  }
+  header {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .header-right {
+    display: none;
+  }
+  .header-top {
+    position: absolute;
+    display: block;
+    .header-left {
+      margin-left: 30px;
+    }
+  }
+  .top {
+    .top-title {
+      font-size: 50px;
+      margin-top: 13%;
+      margin-left: 3%;
+    }
+    .top-subtitle {
+      font-size: 25px;
+      right: 0;
+      margin-top: 200px;
+    }
+    .top-subtitle-span {
+      font-size: 20px;
+    }
+  }
+  .top {
+  .top-btn {
+      img {
+        width: 150px;
+        margin-top: 130px;
+      }
+  }
+  }
 }
